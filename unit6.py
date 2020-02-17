@@ -1,5 +1,6 @@
 # <Unit 6. 변수와 입력 사용하기>
 
+
 ##### 6.1 변수 만들기
 
 # x = 10; x
@@ -24,3 +25,45 @@
 
 
 ##### 6.2 변수로 계산하기
+
+# a,b = 10,20; c = a+b; c
+
+# a = 10; a+20; a;
+# a = 10; a = a+20; a;
+# b = 10; b +=20; b;
+
+# cf) 부호 붙이기
+# x = -10; +x; -x;
+
+
+##### 6.3 입력 값을 변수에 저장하기
+
+# input()
+# x = input(); x
+# x = input('문자열을 입력하세요:')
+# (바로 문자열이 나오는데 이것을 프롬프트(prompt)라고도 함.)
+
+# a = input(); b = input()
+# a + b
+# 10과 20을 입력했다면 '1020'이 나옴. 문자열이기 때문.
+# type(a)
+
+# a = int(input()); b = int(input()); a+b
+
+
+##### 6.4 입력 값을 변수 두 개에 저장하기
+
+# a, b = input('입력:').split(); a, b
+# 공백을 기준으로 나누기때문에 공백 없으면 에러.
+
+# a,b = input().split	# 공백 있어야함
+# print(int(a)+int(b))
+# a = int(a); b = int(b); a+b
+
+# a,b = map(int, input().split()); a+b
+# a,b = map(int, input().split(',')); a+b	# 콤마를 기준으로 분리.
+
+
+##### 연습문제
+a, b, c = map(int, input().split())
+print(a+b+c)
