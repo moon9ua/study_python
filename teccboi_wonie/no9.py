@@ -17,9 +17,14 @@ client = Client(account_sid, auth_token)
 
 message = client.messages \
                 .create(
-                     body="Join Earth's mightiest heroes. Like Kevin Bacon.",
+                     body="테스트테스트",
                      from_='+17637629786',
                      to='+821065651094'
                  )
 
 print(message.sid)
+
+## pip3 install 패키지
+## pip에 3을 안붙여줘서 헤맸음.
+## https://dojang.io/mod/page/view.php?id=2443
+## https://docs.microsoft.com/ko-kr/windows/python/web-frameworks
