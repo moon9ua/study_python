@@ -6,12 +6,12 @@
 
 ## +17637629786
 ## ACac21061323b47757d9eadc96a5f966e5
-## 6ece33fe6afd6f5251c550919dcfa690
+## 비밀번호
 
 from twilio.rest import Client
 
 account_sid = 'ACac21061323b47757d9eadc96a5f966e5'
-auth_token = '6ece33fe6afd6f5251c550919dcfa690'
+auth_token = '비밀번호'     # 비밀번호 바꿀것
 
 client = Client(account_sid, auth_token)
 
@@ -19,7 +19,7 @@ message = client.messages \
                 .create(
                      body="테스트테스트",
                      from_='+17637629786',
-                     to='+821065651094'
+                     to='+821012341234'     # 번호 바꿀것
                  )
 
 print(message.sid)
