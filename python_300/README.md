@@ -77,3 +77,36 @@
 
 * 리스트 정렬: list.sort()
 
+## 튜플
+
+* 튜플이란? 순서가 있고 수정이 불가능한 자료구조.
+
+* 튜플 생성
+    * var = ()
+    * var = ("a", "b", "c")
+    * var = 1, 2, 3
+
+* 튜플과 리스트
+    * list()
+    * tuple()
+    * 서로 형변환이 가능.
+
+* 튜플 언패킹
+    ```
+    var = ("apple", "banaba", "cake")
+    # a, b = var # 언패킹 오류
+    a, b, c = var # a에는 apple이 들어감.
+    ```
+
+* range()
+    * list(range(99)[2::2])
+    * tuple(range(2, 98, 2))
+
+## 딕셔너리
+
+* 언패킹
+    * https://python.bakyeono.net/chapter-5-5.html
+    * https://studydevseung.tistory.com/27
+    * 여러 값은 *로 묶음.
+    * 불필요한 값은 '_(언더바)'로 처리 추천.
+    * ex) _, *valid_score, _ = scores
