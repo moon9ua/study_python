@@ -17,11 +17,10 @@
 ## 문자열
 
 * 오프셋 인덱스
-    * var[index]
-    * var[start:end]
-    * var[start:end:stride] : stride는 보폭.
+    * var[\<index>]
+    * var[\<start>:\<end>]
+    * var[\<start>:\<end>:\<stride>] : stride는 보폭.
 
-* 오프셋 인덱스 예제
     ```
     str = "0123456789"
     print (str[:4]) # 0123
@@ -50,7 +49,7 @@
 
 ## 리스트
 
-* 리스트란? 순서가 있고 수정 가능한 자료구조.
+* 리스트란? 순서가 있고 <u>수정 가능</u>한 자료구조.
 
 * 리스트 생성: list = ["a", "b", "c"]
 
