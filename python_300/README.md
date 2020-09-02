@@ -138,10 +138,13 @@
 * range()
     * range(\<stop>)
     * range(\<start>, \<stop>)
-    * range(\<start>, \<stop>, \<범위>)
+    * range(\<start>, \<stop>, \<step>)
+    * 마지막 숫자인 stop은 포함되지 않는다.
+    * int만 가능, float는 불가능.
+    * 리스트에서는 `for i in range(len(\<리스트>))`와 같이 사용됨.
 
 * 리스트에서의 반복문
-    * 인덱스로의 접근
+    * 인덱스(range)로의 접근
     ```
     apart = [ [101, 102], [201, 202], [301, 302] ]
     for i in range(len(apart)):
@@ -155,3 +158,17 @@
         for j in i:
             print(j, "호")
     ```
+    * 요약하자면, `for 변수 in list:`
+
+## 함수
+
+* `def 함수명(매개변수):`
+
+## 모듈
+
+* `import 모듈`
+
+* 공부 더 필요.
+
+## 클래스
+
