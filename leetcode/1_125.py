@@ -37,12 +37,3 @@ class Solution:
 # 클래스의 함수 사용
 a = Solution()
 print(Solution.isPalindrome(a, "0P")) # 언바운드 메서드
-
-'''
-* [ ] 클래스에 대해 공부 필요
-    * 함수 사용법부터 헤맸음
-    * 언바운드 메서드
-* 문자열 필터링
-    * re.sub()
-    * 정규표현식
-'''
