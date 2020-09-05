@@ -38,4 +38,14 @@
 * `sorted()` vs `.sort()`: sorted 함수는 정렬된 새로운 리스트를 반환함. sort 메서드는 기존 리스트를 정렬하며 반환값이 없음.
 * defaultdict 객체: `dict = collections.defaultdict(<디폴트값>)`
 
-## 06) 5
+## 13) 234
+* 다중할당
+    * 다중 할당은 작업들이 동시에 일어난다.
+    * 따라서 스왑 `a, b = b, a`와 같은 것이 가능한 것.
+
+## 21) 316
+* set(): 문자열을 매개변수로 집합을 만들 수 있다.
+    ```
+    test = set("bcda")
+    print (test) # {'a', 'b', 'c', 'd'}
+    ```
