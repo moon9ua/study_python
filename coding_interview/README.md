@@ -1,6 +1,5 @@
 ## 01) 125
-* 클래스
-    * [ ] 언바운드 메서드, 바운드 메서드?
+* [ ] 언바운드 메서드, 바운드 메서드?
     ```
     sol = Solution()
     strs = ["eat","tea","tan","ate","nat","bat"]
@@ -18,7 +17,6 @@
     * typing 모듈로 타입 표시하기: https://www.daleseo.com/python-typing/
     * `from typing import List`
 * 모듈 사용하기: https://dojang.io/mod/page/view.php?id=2441
-* 스왑: `a, b = b, a`
 
 ## 03) 937
 * 수 판별 함수: `isdigit()`, `isdecimal()`, `isnumeric()`
@@ -49,3 +47,7 @@
     test = set("bcda")
     print (test) # {'a', 'b', 'c', 'd'}
     ```
+
+## 20.09.06
+* 우선순위 큐: heapq 모듈(최소 힙)
+* 리스트 컴프리헨션
