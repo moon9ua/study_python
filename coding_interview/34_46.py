@@ -1,15 +1,23 @@
-# class Solution:
-#     def permute(self, nums: List[int]) -> List[List[int]]:
-#         result = []
+from typing import List
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        ret = []
 
-#         def dfs():
-#             tmp_elems = nums # 복사? 참조?
-#             elems = nums
-#             for elem in prev_elems:
-#                 elems
+        def dfs(elems):
+            if not elems:
+                result.append(ret[:])
+                return
+            for elem in elems:
+                new_elems = elems[:]
+                new_elems.remove(elem)
+                ret.append(elem)
+                dfs(new_elems)
+                ret.pop()
+        
+        dfs(nums)
+        return result
 
-test = [1, 2, 3, 4]
-test.append("a")
-print (test)
-test.pop()
-print (test)
+sol = Solution()
+nums = [1, 2, 3]
+print (sol.permute(nums))
